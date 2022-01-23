@@ -13,6 +13,12 @@
 
 ---
 
+## Introduce
+
+Facebook in-app browsers experience a lot of inconvenience because they cannot be linked to existing browsers.
+In particular, some functions such as WebRTC cannot be used, so the user can have a bad experience, so check in advance.
+I created this library to encourage users to leave Facebook and turn on their browsers to enter.
+
 ## Install
 
 ```bash

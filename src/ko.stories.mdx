@@ -1,0 +1,41 @@
+import { Meta, Canvas } from '@storybook/addon-docs';
+
+import isFacebookInAppBrowser from '.';
+
+<Meta title="detect-facebook-in-app-browser | 한국어" />
+
+# Detect Facebook in-app browser
+
+[![Go To Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/juunini/detect-facebook-in-app-browser)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+[![codecov](https://codecov.io/gh/juunini/detect-facebook-in-app-browser/branch/main/graph/badge.svg?token=H2LNON80F9)](https://codecov.io/gh/juunini/detect-facebook-in-app-browser)
+
+<br />
+<h3>
+  당신의 브라우저는 페이스북 웹뷰가
+  <strong style={{ color: isFacebookInAppBrowser() ? 'red' : 'green' }}>
+    {` ${isFacebookInAppBrowser() ? '맞습니다' : '아닙니다'}`}
+  </strong>
+  .
+</h3>
+<br />
+
+## 설치
+
+```bash
+npm i detect-facebook-in-app-browser # npm
+
+yarn add detect-facebook-in-app-browser # yarn
+```
+
+## 사용법
+
+```ts
+import isFacebookInAppBrowser from 'detect-facebook-in-app-browser';
+
+if (isFacebookInAppBrowser()) {
+  // do something...
+}
+```
